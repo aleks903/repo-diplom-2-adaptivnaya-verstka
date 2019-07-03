@@ -44,14 +44,14 @@ body {
 }
 
 .header {
-  background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_1920.jpg);
+  background-image: url(../img/football_1920.jpg);
   background-color: #0a0e34;
   padding-top: 45px;
   padding-bottom: 110px;
 }
 
 .footer {
-  background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_1920.jpg);
+  background-image: url(../img/game_1920.jpg);
   background-color: #0a0e34;
   padding-top: 229px;
   padding-bottom: 54px;
@@ -292,13 +292,13 @@ ol li {
 /*****************************************************************************/
 @media (min-width: 641px) and (max-width: 960px) {
   .header {
-    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_1280.jpg);
+    background-image: url(../img/football_1280.jpg);
     padding-top: 40px;
     padding-bottom: 91px;
   }
   
   .footer {
-    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_1280.jpg);
+    background-image: url(../img/game_1280.jpg);
     padding-top: 126px;
     padding-bottom: 23px;
   }
@@ -372,12 +372,12 @@ ol li {
 /*****************************************************************************/
 @media (max-width: 640px) {
   .header {
-    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_767.jpg);
+    background-image: url(../img/football_767.jpg);
     padding-top: 33px;
   }
   
   .footer {
-    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_767.jpg);
+    background-image: url(../img/game_767.jpg);
     padding-top: 99px;
     padding-bottom: 10px;
   }
