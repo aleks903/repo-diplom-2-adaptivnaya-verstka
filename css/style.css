@@ -249,6 +249,10 @@ ol li {
   position: relative;
   height: 730px;
 }
+
+.work_item:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .work_item::before, .work_item::after {
   position: absolute;
   top: 211px;
@@ -263,6 +267,7 @@ ol li {
   color: #ffffff;
   font-weight: bold;
   font-size: 24px;
+  line-height: 24px;
   padding-left: 70px;
   padding-top: 62px;
   background-color: #5e42b0;
@@ -273,10 +278,10 @@ ol li {
 
 .work_item::after {
   content: "";
-  width: 24px;
+  width: 28px;
   height: 5px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #8f7bc8;
   margin-left: 70px;
   margin-top: 89px;
 }
@@ -292,10 +297,42 @@ ol li {
   right: 0;
 }
 
+.work_item:nth-child(even) .work_img {
+  left: 0;
+}
+
 .work_description {
   width: 50%;
 }
 
+.work_title {
+  font-size: 80px;
+  line-height: 60px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 260px;
+  margin-left: 129px;
+  max-width: 650px;
+}
+
+.work_item:nth-child(even) .work_title {
+  margin-left: auto;
+  margin-right: 117px;
+}
+
+.work_paragraph {
+  font-size: 24px;
+  margin-top: 118px;
+  margin-left: 129px;
+  max-width: 650px;
+
+}
+
+.work_item:nth-child(even) .work_paragraph {
+  margin-left: auto;
+  margin-right: 117px;
+}
 /**************************footer***********************/
 .download_bottom {
   display: flex;
