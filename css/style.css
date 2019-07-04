@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans-Regular.ttf), url(../fonts/OpenSans-Regular.woff), url(../fonts/OpenSans-Regular.woff2);
@@ -103,6 +102,7 @@ body {
 .store_button:first-child {
   margin-right: 50px;
 }
+
 .store_button_logo {
   height: 48px;
 }
@@ -120,7 +120,7 @@ body {
 .store_button_text strong {
   font-weight: bold;
 }
-/************     player     **************************************************************************/
+
 .player {
   position: relative;
   overflow: hidden;
@@ -141,13 +141,13 @@ body {
 .basketball .player_img {
   margin-top: 23px;
   margin-left: calc(50% - 156px);
-  /*margin-left: 624px;*/
   height: 815px;
 }
 
 .player_description {
   padding-top: 116px;
 }
+
 .player_title {
   color: #e7e7e7;
   font-size: 80px;
@@ -158,8 +158,8 @@ body {
 
 .athlets .player_title, .athlets .list_title, .athlets .list_paragraph {
   margin-left: 53%;
-  max-width: 715px;
-  box-sizing: content-box;
+  padding-right: 15px;
+  max-width: 730px;
 }
 
 .basketball .player_title, .basketball .list_title, .basketball .list_paragraph {
@@ -223,12 +223,12 @@ ol li {
 }
 
 .athlets .player_item:nth-child(3n+3) .list_title::before {
-  border-bottom: 5px solid #efefef;
+  border-bottom-color: #efefef;
 }
 
 .basketball .player_item:nth-child(3n+3) .list_title::before {
   color: #6754af;
-  border-bottom: 5px solid #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .list_title {
@@ -246,7 +246,6 @@ ol li {
   font-size: 20px;
 }
 
-/**************************work it***********************/
 .work_item {
   display: flex;
   position: relative;
@@ -272,12 +271,8 @@ ol li {
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
-  padding-left: 70px;
-  padding-top: 62px;
   background-color: #5e42b0;
-  width: 168px;
-  height: 154px;
-  box-sizing: inherit;
+  padding: 62px 70px;
 }
 
 .work_item::after {
@@ -307,7 +302,6 @@ ol li {
 
 .work_description {
   width: 50%;
-
 }
 
 .work_title {
@@ -341,7 +335,7 @@ ol li {
   margin-left: auto;
   margin-right: 117px;
 }
-/**************************footer***********************/
+
 .download_bottom {
   display: flex;
   margin-bottom: 151px;
@@ -377,7 +371,7 @@ ol li {
 .store_buttons_footer {
   margin-bottom: 262px;
 }
-/*****************************************************************************/
+
 @media (min-width: 961px) and (max-width: 1920px) {
   .header_caption {
       width: 100%;
@@ -391,19 +385,131 @@ ol li {
   width: 50%;
   }
 }
-
-/*****************************************************************************/
+/*scren 768*/
 @media (min-width: 641px) and (max-width: 960px) {
   .header {
     background-image: url(../img/football_1280.jpg);
-    padding-top: 40px;
-    padding-bottom: 91px;
+    padding-top: 5.21vw;
+    padding-bottom: 11.85vw;
   }
-  
+
+  .player_description {
+    padding-top: 11.2vw;
+  }
+
+  .athlets .player_img {
+    margin-top: 11.2vw;
+    margin-right: 6.38vw;
+    right: 50%;
+    height: 92vw;
+  }
+
+  .basketball .player_img {
+    margin-top: 5.08vw;
+    right: 0;
+    height: 73.57vw;
+  }
+
+  .athlets .player_title, .athlets .list_title, .athlets .list_paragraph {
+    margin-left: 38.08vw;
+    padding-right: 4.3vw;
+  }
+
+  .player_item {
+    padding-top: 5.5vw;
+    padding-bottom: 5.5vw;
+  }
+
+  .player_item:first-child {
+    padding-top: 8.03vw;
+  }
+
+  .player:nth-child(even) .player_item, .player:nth-child(even) .player_title {
+    padding-left: 4.17vw;
+  }
+
+  .list_title {
+    font-size: 4.17vw;
+  }
+
+  .list_paragraph {
+    margin-top: 4.17vw;
+    font-size: 2.08vw;
+  }
+
+  .work_item {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+  }
+
+  .work_item::before, .work_item::after {
+    position: absolute;
+    top: 65.63vw;
+    left: 4.3vw;
+    z-index: 1;
+  }
+
+  .work_item::before {
+    content: counter(list, decimal-leading-zero);
+    counter-increment: list;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3.13vw;
+    line-height: 3.31vw;
+    padding: 5.6vw;
+    background-color: #5e42b0;
+  }
+
+  .work_item::after {
+    content: "";
+    width: 3.65vw;
+    height: 0.65vw;
+    border-radius: 0.65vw;
+    background-color: #8f7bc8;
+    margin-left: 5.6vw;
+    margin-top: 9.11vw;
+  }
+
+  .work_pic {
+    width: 100%;
+  }
+
+  .work_img {
+    height: 76vw;
+    position: inherit;
+  }
+
+  .work_item:nth-child(even) .work_img {
+    height: 76vw;
+    position: inherit;
+  }
+
+  .work_description {
+    width: 100%;
+  }
+
+  .work_title, .work_item:nth-child(even) .work_title {
+    font-size: 10.42vw;
+    margin-top: 11.72vw;
+    margin-left: 3vw;
+    padding: 0;
+  }
+
+  .work_paragraph, .work_item:nth-child(even) .work_paragraph {
+    font-size: 3.13vw;
+    margin-top: 4.95vw;
+    margin-left: 3vw;
+    margin-bottom: 13.67vw;
+    max-width: 78.77vw;
+    padding: 0;
+  }
+
   .footer {
     background-image: url(../img/game_1280.jpg);
-    padding-top: 126px;
-    padding-bottom: 23px;
+    padding-top: 16.4vw;
+    padding-bottom: 3vw;
   }
   
   .logo_text_svg {
@@ -411,8 +517,8 @@ ol li {
   }
   
   .header_caption {
-    margin-top: 181px;
-    margin-bottom: 312px;  
+    margin-top: 23.57vw;
+    margin-bottom: 40.63vw;  
     padding-left: 7.68vw;
     font-size: 8.33vw;
   }
@@ -438,12 +544,9 @@ ol li {
     margin-left: 3.6vw;
     font-size: 1.8vw;
   }
-  /*************************players*******************/
   
-  
-  /*************************bottom********************/
   .download_bottom {
-    margin-bottom: 288px;
+    margin-bottom: 37.5vw;
     flex-direction: column;
     align-items: center;
   }
@@ -457,7 +560,7 @@ ol li {
 
   .download_bottom_text {
     margin-left: 0;
-    margin-top: 83px
+    margin-top: 10.8vw;
   }
   
   .download_bottom_text_1 {
@@ -469,34 +572,34 @@ ol li {
   }
   
   .store_buttons_footer {
-    margin-bottom: 55px;
+    margin-bottom: 7.16vw;
   }
 }
-
-/*****************************************************************************/
+/*screen 320*/
 @media (max-width: 640px) {
   .header {
     background-image: url(../img/football_767.jpg);
-    padding-top: 33px;
+    padding-top: 10.31vw;
   }
   
   .footer {
     background-image: url(../img/game_767.jpg);
-    padding-top: 99px;
-    padding-bottom: 10px;
+    padding-top: 30.94vw;
+    padding-bottom: 3.13vw;
   }
   
   .header, .footer {
     padding-left: 6.25vw;
     padding-right: 6.25vw;
   }
+
   .logo_text_svg {
     width: 41.56vw;
   }
   
   .header_caption {
-    margin-top: 136px;
-    margin-bottom: 90px;  
+    margin-top: 42.5vw;
+    margin-bottom: 28.13vw;  
     font-size: 8.75vw;
   }
   
@@ -505,8 +608,9 @@ ol li {
   }
   
   .header {
-    padding-bottom: 84px;
+    padding-bottom: 26.25vw;
   }
+
   .store_buttons {
     flex-direction: column;
     margin-left: 0;
@@ -522,19 +626,152 @@ ol li {
   
   .store_button:first-child {
     margin-right: 0;
-    margin-bottom: 14px;
+    margin-bottom: 4.38vw;
   }
   
   .store_button_logo {
   height: 7.5vw;
-}
+  }
   
   .store_button_text {
     font-size: 2.5vw;
   }
+
+  .athlets .player_img {
+    margin-top: 25vw;
+    margin-left: calc(50% - 192px/2);
+    height: unset;
+  }
+
+  .basketball .player_img {
+    margin-top: 25vw;
+    margin-left: calc(50% - 302px/2);
+    height: unset;
+  }
+
+  .player_description {
+    padding-top: 7.5vw;
+  }
+
+  .player_title {
+    font-size: 15.63vw;
+    line-height: 15.63vw;
+  }
+
+  .athlets .player_title, .athlets .list_title, .athlets .list_paragraph {
+    margin-left: 6.25vw;
+    padding-right: 6.25vw;
+    max-width: 228.13vw;
+  }
+
+  .basketball .player_title, .basketball .list_title, .basketball .list_paragraph {
+    margin-right: 6.25vw;
+    margin-left: 6.25vw;
+    max-width: 228.13vw;
+  }
+
+  .player_lists {
+    margin-top: 76.25vw;
+  }
+
+  .player_item {
+    padding-bottom: 17.19vw;
+  }
+
+  .player_item:first-child {
+    padding-top: 25.94vw;
+  }
+
+  .player_item:nth-child(3n+1) {
+    background-color: #fafafa;
+  }
+
+  .player:nth-child(even) .player_item, .player:nth-child(even) .player_title{
+    padding-left: 0;
+
+  }
   
+  .list_title {
+    font-size: 7.19vw;
+    line-height: 7.19vw;
+    padding-left: 8.13vw;
+  }
+
+  .list_title::before {
+    font-size: 4.38vw;
+    padding-bottom: 0;
+    border-bottom-width: 0.94vw;
+  }
+
+  .list_paragraph {
+    margin-top: 8.43vw;
+    font-size: 4.69vw;
+  }
   
-  /**************bottom*****************/
+  .work_item {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+  }
+  .work_item::before, .work_item::after {
+    position: absolute;
+    top: 91.56vw;
+    left: 6.25vw;
+    z-index: 1;
+  }
+
+  .work_item::before {
+    content: counter(list, decimal-leading-zero);
+    counter-increment: list;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 4.38vw;
+    line-height: 4.38vw;
+    padding: 8.44vw;
+    background-color: #5e42b0;
+  }
+
+  .work_item::after {
+    content: "";
+    width: 5vw;
+    height: 1.25vw;
+    border-radius: 1.25vw;
+    background-color: #8f7bc8;
+    margin-left: 8.26vw;
+    margin-top: 13.44vw;
+  }
+
+  .work_pic {
+    width: 100%;
+  }
+
+  .work_img, .work_item:nth-child(even) .work_img {
+    height: 109.69vw;
+    position: inherit;
+  }
+
+  .work_description {
+    width: 100%;
+  }
+
+  .work_title, .work_item:nth-child(even) .work_title {
+    font-size: 8.75vw;
+    line-height: 8.75vw;
+    margin-top: 11.72vw;
+    margin-left: 6.25vw;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .work_paragraph, .work_item:nth-child(even) .work_paragraph {
+    font-size: 5vw;
+    margin: 7.58vw 0 7.58vw 6.25vw;
+    max-width: 87.5vw;
+    padding: 0;
+
+  }
+
   .download_bottom {
     margin-bottom: 23.75vw;
     flex-direction: column;
@@ -547,8 +784,9 @@ ol li {
     padding: 2.5vw;
     border-radius: 3.75vw;
   }
+
   .download_bottom_text {    
-    margin-top: 59px;
+    margin-top: 18.44vw;
     margin-left: 0;
   }
   
@@ -561,6 +799,6 @@ ol li {
   }
   
   .store_buttons_footer {
-    margin-bottom: 82px;
+    margin-bottom: 25.63vw;
   }
 }
