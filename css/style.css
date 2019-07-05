@@ -21,6 +21,13 @@ body {
   font-family: OpenSans, sans-serif;
 }
 
+h2 {
+  font-size: 80px;
+  line-height: 60px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .header_footer_block {
   background-repeat: no-repeat;
   background-position: center center;
@@ -149,11 +156,11 @@ body {
 }
 
 .player_title {
-  color: #e7e7e7;
+  /*color: #e7e7e7;
   font-size: 80px;
   line-height: 60px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
 }
 
 .athlets .player_title, .athlets .list_title, .athlets .list_paragraph {
@@ -305,11 +312,11 @@ ol li {
 }
 
 .work_title {
-  font-size: 80px;
+  /*font-size: 80px;
   line-height: 60px;
   color: #e7e7e7;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold;*/
   margin-top: 260px;
   margin-left: 129px;
   max-width: 635px;
@@ -382,6 +389,10 @@ ol li {
 }
 /*scren 768*/
 @media (min-width: 641px) and (max-width: 960px) {
+  h2 {
+    font-size: 10.42vw;
+  }
+
   .header {
     background-image: url(../img/football_1280.jpg);
     padding-top: 5.21vw;
@@ -486,7 +497,7 @@ ol li {
   }
 
   .work_title, .work_item:nth-child(even) .work_title {
-    font-size: 10.42vw;
+    /*font-size: 10.42vw;*/
     margin-top: 11.72vw;
     margin-left: 3vw;
     padding: 0;
