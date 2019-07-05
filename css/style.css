@@ -95,7 +95,7 @@ body {
   width: 310px;
   height: 77px;
   background-color: #5e42b0;
-  border-radius: 35px;
+  border-radius: 77px;
   text-decoration: none;
 }
 
@@ -317,7 +317,7 @@ ol li {
   padding-left: 12px
 }
 
-.work_item:nth-child(even) .work_title {
+.work_item:nth-child(even) .work_title, .work_item:nth-child(even) .work_paragraph {
   margin-left: auto;
   margin-right: 117px;
 }
@@ -329,11 +329,6 @@ ol li {
   max-width: 635px;
   padding-right: 14px;
   padding-left: 12px
-}
-
-.work_item:nth-child(even) .work_paragraph {
-  margin-left: auto;
-  margin-right: 117px;
 }
 
 .download_bottom {
