@@ -52,8 +52,8 @@ h2 {
 .header {
   background-image: url(../img/football_1920.jpg);
   background-color: #0a0e34;
-  padding-top: 45px;
-  padding-bottom: 110px;
+  /*padding-top: 45px;
+  padding-bottom: 110px;*/
 }
 
 .footer {
@@ -71,7 +71,8 @@ h2 {
   fill: #ffffff;
 }
 
-.logo_text_svg {
+.logo_text {
+  margin-top: 45px;
   width: 191px;
 }
 
@@ -93,6 +94,7 @@ h2 {
 
 .store_buttons {
   display: flex;
+  margin-bottom: 110px;
 }
 
 .store_button {
@@ -395,8 +397,11 @@ ol li {
 
   .header {
     background-image: url(../img/football_1280.jpg);
-    padding-top: 5.21vw;
-    padding-bottom: 11.85vw;
+    /*padding-top: 5.21vw;*/
+  }
+
+  .logo_text {
+    margin-top: 5.21vw;
   }
 
   .player_description {
@@ -533,6 +538,10 @@ ol li {
     padding-left: 21.22vw;
   }
   
+  .store_buttons {
+    margin-bottom: 11.85vw;
+  }
+
   .store_button {
     width: 40.4vw;
     height: 10vw;
@@ -585,7 +594,6 @@ ol li {
 @media (max-width: 640px) {
   .header {
     background-image: url(../img/football_767.jpg);
-    padding-top: 10.31vw;
   }
   
   .footer {
@@ -599,7 +607,8 @@ ol li {
     padding-right: 6.25vw;
   }
 
-  .logo_text_svg {
+  .logo_text {
+    margin-top: 10.31vw;
     width: 41.56vw;
   }
   
@@ -614,13 +623,14 @@ ol li {
   }
   
   .header {
-    padding-bottom: 26.25vw;
+    /*padding-bottom: 26.25vw;*/
   }
 
   .store_buttons {
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 26.25vw;
     width: 100%;
   }
   
