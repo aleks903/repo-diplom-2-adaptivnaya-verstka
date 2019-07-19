@@ -111,6 +111,7 @@ h2 {
 
 .content_button {
   display: flex;
+  align-items: center;
 }
 
 .store_button:first-child {
