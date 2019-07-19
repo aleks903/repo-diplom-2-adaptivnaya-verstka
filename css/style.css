@@ -73,12 +73,7 @@ h2 {
 }
 
 .logo_text {
-  /*margin-top: 45px;*/
   width: 191px;
-}
-
-.footer .logo_text {
-/* margin-bottom: 52px; */
 }
 
 .header_caption {
@@ -100,7 +95,6 @@ h2 {
 
 .store_buttons {
   display: flex;
-  /*margin-bottom: 110px;*/
 }
 
 .store_button {
@@ -112,6 +106,10 @@ h2 {
   background-color: #5e42b0;
   border-radius: 77px;
   text-decoration: none;
+}
+
+.content_button {
+  display: flex;
 }
 
 .store_button:first-child {
@@ -188,7 +186,6 @@ ol li {
 .list_title::before {
   content: counter(list, decimal-leading-zero);
   counter-increment: list;
-/*  position: absolute;*/
 }
 
 .player_item {
@@ -224,8 +221,6 @@ ol li {
   font-weight: bold;
   vertical-align: top;
   padding-right: 13px;
-/*  padding-bottom: 5px;
-  border-bottom: 5px solid #5e42b0;*/
 }
 
 .list_title::after {
@@ -257,7 +252,6 @@ ol li {
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-/*  padding-left: 33px;*/
   color: #c1c1c1;
 }
 
@@ -315,10 +309,6 @@ ol li {
   justify-content: center;
 }
 
-.work_img {
-  height: 100%;
-}
-
 .work_item:nth-child(even) .work_img {
   left: 0;
 }
@@ -351,7 +341,6 @@ ol li {
 
 .download_bottom {
   display: flex;
-  /*margin-top: 229px;*/
   margin-bottom: 151px;
 }
 
@@ -532,14 +521,6 @@ ol li {
     height: 584px;
   }
 
-  .work_img {
-    width: 100%;
-  }
-
-  .work_item:nth-child(even) .work_img {
-    height: 584px;
-  }
-
   .work_description {
     width: 100%;
   }
@@ -565,7 +546,6 @@ ol li {
   }
   
   .download_bottom {
-    /*margin-top: 126px;*/
     margin-bottom: 83px;
     flex-direction: column;
     align-items: center;
@@ -636,6 +616,10 @@ ol li {
     width: 100%;
   }
   
+  .content_button {
+    width: 113px;
+  }
+
   .store_button:first-child {
     margin-right: 0;
     margin-bottom: 14px;
@@ -704,7 +688,6 @@ ol li {
   .list_title {
     font-size: 23px;
     line-height: 1em;
-    /*padding-left: 11px;*/
   }
 
   .list_title::before {
@@ -759,10 +742,6 @@ ol li {
     height: 351px;
   }
 
-  .work_img, .work_item:nth-child(even) .work_img {
-    width: 100%;
-  }
-
   .work_description {
     width: 100%;
   }
@@ -783,7 +762,6 @@ ol li {
   }
 
   .download_bottom {
-    /*margin-top: 99px;*/
     margin-bottom: 77px;
     flex-direction: column;
     align-items: center;
