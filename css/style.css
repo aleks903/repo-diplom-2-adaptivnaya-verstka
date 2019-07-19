@@ -19,6 +19,7 @@
 
 body {
   font-family: OpenSans, sans-serif;
+  min-width: 320px;
 }
 
 h2 {
@@ -567,9 +568,6 @@ ol li {
 }
 /**********screen 320***********/
 @media (max-width: 640px) {
-  body {
-    min-width: 320px;
-  }
   .header {
     background-image: url(../img/football_767.jpg);
     padding-top: 33px;
